@@ -46,7 +46,12 @@ public class Excercise4 {
 		while(true){
 			System.out.println("Input Grade: ");
 			x = reader.nextInt();
-			if(x == -1)	break;
+			if(x == -1){
+				break;
+			}else if(x < 0 | x > 100){
+				System.out.println("Outside of range");
+				continue;
+			}
 			gradesAdded += x;
 			previousHighestGrade = Math.max(previousHighestGrade, x);
 			previousLowestGrade = Math.min(previousLowestGrade, x);
