@@ -9,10 +9,10 @@ public class Excercise6 {
 		
 		int die1, die2, dollars = 100, result, average = 0, count = 0;
 		
-		for(int i = 0; i <= 100; i++){
+		for(int i = 0; i <= 1000000; i++){
 			while(dollars > 0){
-				die1 = generator.nextInt();
-				die2 = generator.nextInt();
+				die1 = generator.nextInt(6) + 1;
+				die2 = generator.nextInt(6) + 1;
 				result = die1 + die2;
 				if(result == 7){
 					dollars += 4;
@@ -23,8 +23,9 @@ public class Excercise6 {
 			}
 			average += count;
 			count = 0;
+			dollars = 100;
 		}
-		System.out.println("This is your average roll's till bust: " + average / 100);
+		System.out.println("This is your average roll's till bust: " + average / 1000000);
 	}
 
 }
