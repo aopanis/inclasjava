@@ -2,7 +2,7 @@ package chapter8;
 
 import java.util.Scanner;
 
-public class Excercise1 {
+public class Excercise2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -14,8 +14,8 @@ public class Excercise1 {
 		double guess = 1;
 		for(int i = 0; i <= iterations; i++){
 			guess = ((guess + number / guess) / 2);
+			System.out.println(guess);
 		}
-		System.out.println(guess);
 	}
 
 }
