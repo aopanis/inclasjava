@@ -2,7 +2,7 @@ package chapterFour;
 
 import java.util.Scanner;
 
-public class Chapter4and7 {
+public class Chapter4and7actual {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -12,16 +12,11 @@ public class Chapter4and7 {
 		int base = reader.nextInt();
 		
 		int m = 2;
-		System.out.println("Exponent");
-		int exponent = reader.nextInt();
 		
-		if(exponent == -1){
-			System.exit(0);
-		}
-		for(int i = 0; i < exponent; i++){
+		for(int i = 0; i < 1; i++){
 			
-			m = m * m;
-			System.out.println(m);
+			base = base * base;
+			System.out.println(base);
 			
 		}
 		

@@ -10,8 +10,8 @@ public class Chapter4and1 {
 		Scanner reader = new Scanner(System.in);
 		
 		System.out.println("Write first double then second double: ");
-		double firstDouble = reader.nextDouble();
-		double secondDouble = reader.nextDouble();
+		int firstDouble = reader.nextInt();
+		int secondDouble = reader.nextInt();
 		
 		if (firstDouble >= secondDouble) {
 			System.out.println(Math.floor(firstDouble / secondDouble) +  "\n" + firstDouble % secondDouble);
